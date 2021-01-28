@@ -66,13 +66,13 @@ function calculateRank({
   let level = "";
 
   if (normalizedScore < RANK_S_VALUE) {
-    level = "S+";
+    level = "A++";
   }
   if (
     normalizedScore >= RANK_S_VALUE &&
     normalizedScore < RANK_DOUBLE_A_VALUE
   ) {
-    level = "S";
+    level = "A++";
   }
   if (
     normalizedScore >= RANK_DOUBLE_A_VALUE &&
@@ -84,7 +84,7 @@ function calculateRank({
     level = "A++";
   }
   if (normalizedScore >= RANK_A3_VALUE && normalizedScore < RANK_B_VALUE) {
-    level = "B+";
+    level = "A++";
   }
 
   return { level, score: normalizedScore };
