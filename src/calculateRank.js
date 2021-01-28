@@ -81,7 +81,7 @@ function calculateRank({
     level = "A++";
   }
   if (normalizedScore >= RANK_A2_VALUE && normalizedScore < RANK_A3_VALUE) {
-    level = "A+";
+    level = "A++";
   }
   if (normalizedScore >= RANK_A3_VALUE && normalizedScore < RANK_B_VALUE) {
     level = "B+";
